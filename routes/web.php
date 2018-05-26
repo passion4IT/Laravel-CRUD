@@ -16,4 +16,4 @@ Route::get('/user/create', 'UserController@createUser')->name('create_new_user')
 Route::get('/user/{user}', 'UserController@showUser')->name('user_details');
 Route::post('/user/create', 'UserController@store')->name('store_user');
 Route::put('/user/{apiUser}/edit', 'UserController@edit')->name('edit_user');
-
+Route::delete('/user/{apiUser}/delete', 'UserController@destroy')->name('delete_user');

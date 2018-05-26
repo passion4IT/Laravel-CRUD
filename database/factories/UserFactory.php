@@ -1,6 +1,6 @@
 <?php
 
-use App\ApiUser;
+use App\Models\ApiUser;
 use Faker\Generator as Faker;
 
 /*
@@ -14,7 +14,7 @@ use Faker\Generator as Faker;
 |
 */
 
-$factory->define(App\User::class, function (Faker $faker) {
+$factory->define(App\Models\User::class, function (Faker $faker) {
     return [
         'name' => $faker->name,
         'email' => $faker->unique()->safeEmail,
@@ -23,9 +23,9 @@ $factory->define(App\User::class, function (Faker $faker) {
     ];
 });
 
-$factory->define(ApiUser::class, function(Faker $faker) {
+$factory->define(ApiUser::class, function (Faker $faker) {
     return [
-        'name' => $faker->firstName.''.$faker->lastName,
+        'name' => $faker->firstName . ' ' . $faker->lastName,
         'address' => $faker->address,
         'active' => true,
         'country' => $faker->country

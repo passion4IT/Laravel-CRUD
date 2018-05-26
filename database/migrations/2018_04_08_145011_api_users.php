@@ -22,6 +22,7 @@ class ApiUsers extends Migration
             $table->string('address');
             $table->boolean('active');
             $table->string('country');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

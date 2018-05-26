@@ -1,6 +1,6 @@
 <?php
 
-use App\ApiUser;
+use App\Models\ApiUser;
 use Illuminate\Database\Seeder;
 
 /**
