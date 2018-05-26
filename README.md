@@ -1,0 +1,15 @@
+### Laravel CRUD
+- This is simple laravel application to play around CRUD operation. 
+- To setup the application :
+    - Requirements:
+        - PHP >= 7.0
+        - Nodejs
+        - Composer
+        - Mysql database
+    - Installation instructions:
+        - Clone the repository
+        - Install vendor dependencies: `composer install`
+        - Install node modules: `npm run dev` or enable watching: `nom run watch`
+        - Run migration: `php artisan migrate`
+        - Optional: Run the seeder to have example data: `php artisan db:seed`
+        - Kick the web server: `php artisan serve`
